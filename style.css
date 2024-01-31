@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Girloy';
+    color: #fff;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    cursor: none;
+    background-color: black;
+
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+#nav{
+    height: 40px;
+    width: 100%;
+   position: fixed;
+   mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    z-index: 110;
+    text-transform: uppercase;
+}
+#nav img{
+  height: 25px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+#nav-part2 h1{
+    font-size: 15px;
+    font-weight: 400;
+}
+#nav h1:nth-child(1){
+    border-bottom: 1.7px solid #fff;
+}
+#nav-part3 #cir{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 99;
+    color: #fff;
+}
+#pappu{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+    background-color: rgb(235, 137, 235);
+    opacity: 0;
+    transition: all ease 1s;
+    display: none;
+}
+
+.page1 h2{
+    font-size: 7.9vw;
+    font-weight: 500;
+    /* margin-top: 12vw; */
+    margin-left: 6vw;
+}
+.page1 h3{
+    font-size: 7.9vw;
+    font-weight: 500;
+    margin-left: 26vw;
+}
+.page1 video{
+    width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50% , 0);
+   
+}
+.page2{
+    width: 100%;
+    min-height: 50vh;
+    padding: 1vw 2vw;
+    position: relative;
+    z-index: 9;
+    border-bottom: 2px solid #94878753;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 400;
+    color: #111;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5.3vw;
+}
+.page2-l{
+    width: 34%;
+}
+.page2-l h2{
+    font-size: 3.6vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #111;
+    line-height: 3.3vw;
+}
+.page2-r p{
+    font-size: 2vw;
+    color: #111;
+}
+.page2-r button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4.1px 0;
+    margin-top: 1vw;
+    background-color: #f551fa;
+}
+.page3{
+    min-height: 160vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+.page3 h1{
+    font-size: 6.3vw;
+    font-weight: 400;
+    color: #000;
+    margin-left: 4vw;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.page3-part1 img{
+    height: 26vw;
+    margin-top: 11vw;
+}
+.page3-part1 video{
+    height: 24vw;
+}
+.cursor{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+    transition: background-image ease 0.2s ;
+    background-position: center;
+    background-size: cover;
+    
+}
+.page4{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 9;
+    padding: 100px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text{
+    height: 110px;
+    overflow: hidden;
+    font-family: futura;
+    color: #f551fa;
+}
+.elem h1{
+    font-size: 8vw;
+    transition: all ease-out 0.5s;
+}
+.elem img{
+    height: 20vw;
+    position: absolute;
+    transition: all ease-out 0.5s;
+    opacity: 0;
+    transform: translateY(10%)rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: -8%;
+}
+.elem img:nth-child(3){
+    right: 7%;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: pink;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%)rotate(0);
+
+}
+.page5{
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.chacha{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+.chacha:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+}
